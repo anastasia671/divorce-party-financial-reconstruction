@@ -35,3 +35,17 @@ const certifiedDecisionRow = decisionRow;
 decisionRow = function(decision){
   return certifiedDecisionRow(decision).replace("<b>Student reasoning</b>", "<b>Why the evidence supports this answer</b>");
 };
+
+const decisionRowWithEvidenceCaption = decisionRow;
+decisionRow = function(decision){
+  let row = decisionRowWithEvidenceCaption(decision);
+  const effectLabel = decision.effectType === "comparison_only" ? "Comparison with management claim" : "Statement effect";
+  const effectContent = decision.effectType === "comparison_only"
+    ? escapeHtml(decision.statementEffectNarrative)
+    : row.match(/<b>Statement effect<\/b><p>([\s\S]*?)<\/p>/)?.[1] || "No direct statement entry";
+  row = row.replace(/<b>Statement effect<\/b><p>[\s\S]*?<\/p>/, `<b>${effectLabel}</b><p>${effectContent}</p>`);
+  if (decision.statementEffectNarrative && decision.effectType !== "comparison_only") {
+    row = row.replace("<b>Overruled AI?</b>", `<b>Effect note</b><p>${escapeHtml(decision.statementEffectNarrative)}</p><b>Overruled AI?</b>`);
+  }
+  return row;
+};

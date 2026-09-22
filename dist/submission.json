@@ -1341,11 +1341,11 @@
       "statementEffect": {
         "profit": 0,
         "cash": -60000,
-        "assets": 60000,
+        "assets": 0,
         "liabilities": 0,
         "equity": 0
       },
-      "statementEffectNarrative": "Effects are quantified by statement in statementEffect; null means no direct effect on that statement.",
+      "statementEffectNarrative": "The EUR 60,000 PPE increase is exactly offset by the EUR 60,000 cash reduction, so total assets are unchanged at purchase. There is no immediate profit, liability or equity effect.",
       "agentsDisagreed": false,
       "overruledAI": false,
       "overruledAIAnswer": "No",
@@ -1370,11 +1370,11 @@
       "statementEffect": {
         "profit": 0,
         "cash": -20000,
-        "assets": 20000,
+        "assets": 0,
         "liabilities": 0,
         "equity": 0
       },
-      "statementEffectNarrative": "Effects are quantified by statement in statementEffect; null means no direct effect on that statement.",
+      "statementEffectNarrative": "The EUR 20,000 PPE increase is exactly offset by the EUR 20,000 cash reduction, so total assets are unchanged at purchase. There is no immediate profit, liability or equity effect.",
       "agentsDisagreed": false,
       "overruledAI": false,
       "overruledAIAnswer": "No",
@@ -2399,13 +2399,19 @@
       "certifiedFinalAnswer": "Do not use management's claimed EUR 312,000 profit for the earn-out. Use the corrected EUR 74,000 result after approved adjustments and disclose inventory uncertainty.",
       "studentReasoning": "Do not use management's claimed EUR 312,000 profit for the earn-out. Use the certified EUR 74,000 result and disclose inventory uncertainty. Agent 2's EUR 72,000 alternative arises only from the EUR 2,000 disposal-provision proposal in D058; this decision is not a separate override.",
       "statementEffect": {
-        "profit": -238000,
+        "profit": 0,
         "cash": 0,
         "assets": 0,
         "liabilities": 0,
-        "equity": -238000
+        "equity": 0
       },
-      "statementEffectNarrative": "No accounting entry. It rejects the EUR 312,000 management result in favour of the certified EUR 74,000 result.",
+      "effectType": "comparison_only",
+      "comparisonWithManagementClaim": {
+        "managementClaimedProfit": 312000,
+        "certifiedProfit": 74000,
+        "difference": 238000
+      },
+      "statementEffectNarrative": "Comparison only: management's claimed EUR 312,000 profit exceeds the certified EUR 74,000 profit by EUR 238,000. This is not an accounting entry and does not independently change cash, total assets, liabilities or equity.",
       "agentsDisagreed": false,
       "overruledAI": false,
       "overruledAIAnswer": "",
