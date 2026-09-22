@@ -1279,7 +1279,7 @@
       "aiProposal": "Agent 1: defer the EUR 90,000 September deposits.",
       "independentChallenge": "Agent 2: record the EUR 90,000 as contract liabilities because both services are delivered after 31 August.",
       "certifiedFinalAnswer": "Record EUR 90,000 as deferred revenue/contract liabilities, not August revenue.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Record EUR 90,000 as deferred revenue/contract liabilities, not August revenue.",
+      "studentReasoning": "The signed contracts state that the underlying services are to be delivered in September, while the bank export proves only that cash was received. Receipt before performance creates a contract liability, not August revenue.",
       "statementEffect": {
         "profit": -90000,
         "cash": 0,
@@ -1308,7 +1308,7 @@
       "aiProposal": "Agent 1: treat the EUR 50,000 advance as borrowing.",
       "independentChallenge": "Agent 2: record the EUR 50,000 as debt and financing cash inflow, not operating income.",
       "certifiedFinalAnswer": "Record EUR 50,000 as new bank borrowing and a financing cash inflow, not income.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Record EUR 50,000 as new bank borrowing and a financing cash inflow, not income.",
+      "studentReasoning": "The signed loan agreement and matching bank entry establish a repayable EUR 50,000 obligation. Treating a repayable advance as income would overstate profit and equity; the evidence supports debt and a financing cash inflow.",
       "statementEffect": {
         "profit": 0,
         "cash": 50000,
@@ -1337,7 +1337,7 @@
       "aiProposal": "Agent 1: capitalise the EUR 60,000 packaging machine.",
       "independentChallenge": "Agent 2: capitalise the Pack-O-Matic because it is available for use and provides future benefit.",
       "certifiedFinalAnswer": "Capitalise the EUR 60,000 Pack-O-Matic packaging machine as PPE, available for use on 10 May.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Capitalise the EUR 60,000 Pack-O-Matic packaging machine as PPE, available for use on 10 May.",
+      "studentReasoning": "The supplier invoice and asset record identify a EUR 60,000 machine that was installed and available for use on 10 May. It provides benefits over more than one period, so the evidence supports PPE recognition rather than immediate expense.",
       "statementEffect": {
         "profit": 0,
         "cash": -60000,
@@ -1366,7 +1366,7 @@
       "aiProposal": "Agent 1: capitalise the EUR 20,000 photo booth.",
       "independentChallenge": "Agent 2: capitalise the photo booth because it is a long-term resource available for use.",
       "certifiedFinalAnswer": "Capitalise the EUR 20,000 Regret Photo Booth as PPE, available for use on 10 May.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Capitalise the EUR 20,000 Regret Photo Booth as PPE, available for use on 10 May.",
+      "studentReasoning": "The invoice and asset record identify a EUR 20,000 photo booth available for use on 10 May. Its continuing operational use supports capitalisation as PPE rather than an immediate period cost.",
       "statementEffect": {
         "profit": 0,
         "cash": -20000,
@@ -1395,15 +1395,15 @@
       "aiProposal": "Agent 1: expense the EUR 10,000 belt and calibration.",
       "independentChallenge": "Agent 2: expense the repair because it restores normal output without increasing capacity or useful life.",
       "certifiedFinalAnswer": "Expense EUR 10,000 for the replacement belt, cleaning and calibration because it restored normal output only.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Expense EUR 10,000 for the replacement belt, cleaning and calibration because it restored normal output only.",
+      "studentReasoning": "The repair invoice describes replacement belt, cleaning and calibration work that restored normal output without increasing capacity or useful life. That evidence supports a current-period repair expense rather than an addition to PPE.",
       "statementEffect": {
         "profit": -10000,
         "cash": -10000,
-        "assets": 0,
+        "assets": -10000,
         "liabilities": 0,
         "equity": -10000
       },
-      "statementEffectNarrative": "Effects are quantified by statement in statementEffect; null means no direct effect on that statement.",
+      "statementEffectNarrative": "Cash payment reduces total assets by EUR 10,000 and the repair expense reduces profit and equity by EUR 10,000; no liability remains at period end.",
       "agentsDisagreed": false,
       "overruledAI": false,
       "overruledAIAnswer": "No",
@@ -1424,15 +1424,15 @@
       "aiProposal": "Agent 1: treat the EUR 70,000 villa payment as an owner distribution.",
       "independentChallenge": "Agent 2: include the villa within EUR 110,000 owner distributions rather than a business expense.",
       "certifiedFinalAnswer": "Classify the EUR 70,000 villa deposit as an owner distribution and financing outflow.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Classify the EUR 70,000 villa deposit as an owner distribution and financing outflow.",
+      "studentReasoning": "The bank record and owner-card evidence identify a villa in the founder's personal name, with no business purpose or approved remuneration. The EUR 70,000 is therefore an owner withdrawal, not payroll or a business expense.",
       "statementEffect": {
         "profit": 0,
         "cash": -70000,
-        "assets": 0,
+        "assets": -70000,
         "liabilities": 0,
         "equity": -70000
       },
-      "statementEffectNarrative": "Effects are quantified by statement in statementEffect; null means no direct effect on that statement.",
+      "statementEffectNarrative": "Cash is an asset: the EUR 70,000 owner withdrawal reduces cash and total assets, and reduces equity by the same amount. It does not affect profit.",
       "agentsDisagreed": false,
       "overruledAI": false,
       "overruledAIAnswer": "No",
@@ -1453,15 +1453,15 @@
       "aiProposal": "Agent 1: treat EUR 40,000 owner-card spending as an owner distribution.",
       "independentChallenge": "Agent 2: classified documented owner spending as distributions, while separately noting the alleged payroll bonus lacked corroboration.",
       "certifiedFinalAnswer": "Classify EUR 40,000 owner-card spending as an owner distribution and financing outflow.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Classify EUR 40,000 owner-card spending as an owner distribution and financing outflow.",
+      "studentReasoning": "The bank and owner-card records document EUR 40,000 of personal spending with no business purpose and no approved remuneration. It is an owner withdrawal rather than payroll, marketing or another operating cost.",
       "statementEffect": {
         "profit": 0,
         "cash": -40000,
-        "assets": 0,
+        "assets": -40000,
         "liabilities": 0,
         "equity": -40000
       },
-      "statementEffectNarrative": "Effects are quantified by statement in statementEffect; null means no direct effect on that statement.",
+      "statementEffectNarrative": "Cash is an asset: the EUR 40,000 owner withdrawal reduces cash and total assets, and reduces equity by the same amount. It does not affect profit.",
       "agentsDisagreed": false,
       "overruledAI": false,
       "overruledAIAnswer": "No",
@@ -1481,7 +1481,7 @@
       "aiProposal": "Agent 1: use the physical-count inventory and disclose the EUR 9,000 consumption conflict.",
       "independentChallenge": "Agent 2: use EUR 121,000 inventory from the physical count, EUR 396,000 COGS, and disclose the EUR 9,000 conflict.",
       "certifiedFinalAnswer": "Use the physical count for closing inventory: EUR 143,000 before the EUR 22,000 write-down, producing EUR 121,000 saleable inventory. Disclose the unresolved EUR 9,000 conflict with the consumption record.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Use the physical count for closing inventory: EUR 143,000 before the EUR 22,000 write-down, producing EUR 121,000 saleable inventory. Disclose the unresolved EUR 9,000 conflict with the consumption record.",
+      "studentReasoning": "The 31 August physical count is direct evidence of stock on hand and is stronger than the unreconciled consumption record. It supports EUR 143,000 before write-down and EUR 121,000 saleable inventory after the separately evidenced EUR 22,000 impairment; the EUR 9,000 conflict remains disclosed.",
       "statementEffect": {
         "profit": -22000,
         "cash": 0,
@@ -1509,15 +1509,15 @@
       "aiProposal": "Agent 1: present EUR 80,000 event-delivery payroll in cost of sales.",
       "independentChallenge": "Agent 2: presented EUR 80,000 direct event-delivery payroll in cost of sales.",
       "certifiedFinalAnswer": "Classify EUR 80,000 event-delivery payroll in cost of sales.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Classify EUR 80,000 event-delivery payroll in cost of sales.",
+      "studentReasoning": "The payroll record identifies event-delivery staff as performing direct customer-service work. This evidence supports presentation in cost of sales; it is a classification only and does not alter total payroll expense.",
       "statementEffect": {
-        "profit": -80000,
+        "profit": 0,
         "cash": 0,
         "assets": 0,
         "liabilities": 0,
-        "equity": -80000
+        "equity": 0
       },
-      "statementEffectNarrative": "Effects are quantified by statement in statementEffect; null means no direct effect on that statement.",
+      "statementEffectNarrative": "Presentation only: EUR 80,000 is shown in cost of sales rather than sales and office payroll. Total payroll expense, profit, cash, assets, liabilities and equity are unchanged.",
       "agentsDisagreed": false,
       "overruledAI": false,
       "overruledAIAnswer": "No",
@@ -1603,7 +1603,7 @@
       "aiProposal": "Agent 1: recognise EUR 24,000 depreciation, subject to useful-life support.",
       "independentChallenge": "Agent 2: recognise EUR 24,000 depreciation but flag missing useful lives and residual values.",
       "certifiedFinalAnswer": "Recognise EUR 24,000 depreciation expense and accumulated depreciation.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Recognise EUR 24,000 depreciation expense and accumulated depreciation.",
+      "studentReasoning": "The asset workbook provides opening PPE cost and accumulated depreciation, and the independent schedule supports a EUR 24,000 period charge. The charge is recognised while the absence of detailed useful-life support remains disclosed as a limitation.",
       "statementEffect": {
         "profit": -24000,
         "cash": 0,
@@ -1632,7 +1632,7 @@
       "aiProposal": "Agent 1: recognise an EUR 18,000 R-17 impairment allowance.",
       "independentChallenge": "Agent 2: recognise an EUR 18,000 expected-credit-loss allowance from the liquidator evidence.",
       "certifiedFinalAnswer": "Recognise an EUR 18,000 receivables impairment allowance for R-17.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Recognise an EUR 18,000 receivables impairment allowance for R-17.",
+      "studentReasoning": "The post-period liquidator notice confirms that R-17's financial difficulty existed at 31 August. CRM and contract evidence identify the EUR 18,000 balance, so a full allowance is supported rather than a revenue reversal.",
       "statementEffect": {
         "profit": -18000,
         "cash": 0,
@@ -1661,7 +1661,7 @@
       "aiProposal": "Agent 1: write damaged stock down by EUR 22,000 and recognise no disposal provision.",
       "independentChallenge": "Agent 2: write damaged stock down by EUR 22,000 and also recognise a EUR 2,000 disposal provision.",
       "certifiedFinalAnswer": "Recognise a EUR 22,000 inventory write-down to nil for damaged stock; do not recognise the separate EUR 2,000 removal quote as a provision.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Recognise a EUR 22,000 inventory write-down to nil for damaged stock; do not recognise the separate EUR 2,000 removal quote as a provision.",
+      "studentReasoning": "The warehouse count and independent assessment establish that EUR 22,000 of wet basement stock has no saleable value, so it is written down to nil. The EUR 2,000 document is only a disposal quote; without a present obligation at 31 August it does not support a provision.",
       "statementEffect": {
         "profit": -22000,
         "cash": 0,
@@ -1690,7 +1690,7 @@
       "aiProposal": "Agent 1: recognise a EUR 25,000 legal provision only.",
       "independentChallenge": "Agent 2: recognise a EUR 25,000 legal provision.",
       "certifiedFinalAnswer": "Recognise a EUR 25,000 provision because the former employee claim was probable at 31 August and external counsel gave that best estimate.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Recognise a EUR 25,000 provision because the former employee claim was probable at 31 August and external counsel gave that best estimate.",
+      "studentReasoning": "External counsel assessed the employee claim as probable at 31 August and provided EUR 25,000 as the best estimate within the EUR 20,000-EUR 30,000 range. That is evidence of an existing measurable obligation requiring a provision.",
       "statementEffect": {
         "profit": -25000,
         "cash": 0,
@@ -1767,7 +1767,7 @@
       "aiProposal": "Agent 1: recognise NorthStar revenue on delivery and acceptance.",
       "independentChallenge": "Agent 2: recognise the EUR 180,000 NorthStar contract revenue from delivery, acceptance and bank receipt.",
       "certifiedFinalAnswer": "Recognise EUR 180,000 NorthStar revenue on delivery and acceptance.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Recognise EUR 180,000 NorthStar revenue on delivery and acceptance.",
+      "studentReasoning": "The signed contract and customer acceptance establish delivery by 31 August. CRM delivery status and the bank receipt support the EUR 180,000 recognised revenue and settlement.",
       "statementEffect": {
         "profit": 180000,
         "cash": 180000,
@@ -1797,7 +1797,7 @@
       "aiProposal": "Agent 1: recognise Freedom revenue on acceptance.",
       "independentChallenge": "Agent 2: recognise the EUR 200,000 Freedom revenue notwithstanding EUR 58,000 remaining unpaid.",
       "certifiedFinalAnswer": "Recognise EUR 200,000 Freedom revenue on acceptance; EUR 58,000 remains receivable.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Recognise EUR 200,000 Freedom revenue on acceptance; EUR 58,000 remains receivable.",
+      "studentReasoning": "The signed acceptance and CRM completion record establish that Freedom's service was delivered. The bank and CRM records support EUR 142,000 collected and the remaining EUR 58,000 receivable.",
       "statementEffect": {
         "profit": 200000,
         "cash": 142000,
@@ -1826,7 +1826,7 @@
       "aiProposal": "Agent 1: recognise Phoenix revenue on event completion.",
       "independentChallenge": "Agent 2: recognise EUR 100,000 Phoenix revenue based on completed service and customer acceptance.",
       "certifiedFinalAnswer": "Recognise EUR 100,000 Phoenix event revenue on completion and customer acceptance.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Recognise EUR 100,000 Phoenix event revenue on completion and customer acceptance.",
+      "studentReasoning": "Phoenix's completion and acceptance evidence establishes that the EUR 100,000 event was delivered by 31 August. The contract, CRM and collection evidence therefore support revenue recognition rather than deferral.",
       "statementEffect": {
         "profit": 100000,
         "cash": 70000,
@@ -1856,7 +1856,7 @@
       "aiProposal": "Agent 1: recognise Liberty revenue on delivery.",
       "independentChallenge": "Agent 2: recognise EUR 120,000 Liberty revenue from delivered and accepted boxes.",
       "certifiedFinalAnswer": "Recognise EUR 120,000 Liberty revenue on delivery and acceptance; EUR 25,000 remains receivable.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Recognise EUR 120,000 Liberty revenue on delivery and acceptance; EUR 25,000 remains receivable.",
+      "studentReasoning": "The contract, delivery/acceptance record and CRM evidence show that Liberty's EUR 120,000 service was delivered. Cash collection and the CRM open balance support the EUR 25,000 receivable at period end.",
       "statementEffect": {
         "profit": 120000,
         "cash": 95000,
@@ -1885,7 +1885,7 @@
       "aiProposal": "Agent 1: defer the September events.",
       "independentChallenge": "Agent 2: record the two September events as EUR 90,000 contract liabilities, not August revenue.",
       "certifiedFinalAnswer": "Defer EUR 90,000 for September events because no goods or service were delivered by 31 August.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Defer EUR 90,000 for September events because no goods or service were delivered by 31 August.",
+      "studentReasoning": "The contracts explicitly place performance in September. The EUR 90,000 bank receipts are therefore customer advances at 31 August and are deferred until the promised services are delivered.",
       "statementEffect": {
         "profit": -90000,
         "cash": 0,
@@ -1938,7 +1938,7 @@
       "aiProposal": "Agent 1: allow EUR 18,000 for R-17.",
       "independentChallenge": "Agent 2: use an EUR 18,000 loss allowance based on the 3 September liquidator notice.",
       "certifiedFinalAnswer": "Estimate the closing R-17 allowance at EUR 18,000.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Estimate the closing R-17 allowance at EUR 18,000.",
+      "studentReasoning": "The liquidator evidence supports no recovery of the EUR 18,000 R-17 balance, and the later notice confirms a condition that existed at 31 August. The full allowance is therefore the evidence-based estimate.",
       "statementEffect": {
         "profit": -18000,
         "cash": 0,
@@ -1967,7 +1967,7 @@
       "aiProposal": "Agent 1: write off EUR 22,000 of damaged stock.",
       "independentChallenge": "Agent 2: recognise a EUR 22,000 inventory write-down to nil for damaged stock.",
       "certifiedFinalAnswer": "Estimate the damaged-inventory write-off at EUR 22,000, reducing that stock to nil.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Estimate the damaged-inventory write-off at EUR 22,000, reducing that stock to nil.",
+      "studentReasoning": "The 31 August warehouse count and independent assessment identify EUR 22,000 of wet stock with no saleable value. Reducing this separately identified stock to nil is supported directly by the evidence.",
       "statementEffect": {
         "profit": -22000,
         "cash": 0,
@@ -1996,7 +1996,7 @@
       "aiProposal": "Agent 1: provide EUR 25,000 for the employee claim.",
       "independentChallenge": "Agent 2: provide EUR 25,000 for the legal claim.",
       "certifiedFinalAnswer": "Estimate the legal provision at EUR 25,000, the external counsel's best estimate within the EUR 20,000-EUR 30,000 range.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Estimate the legal provision at EUR 25,000, the external counsel's best estimate within the EUR 20,000-EUR 30,000 range.",
+      "studentReasoning": "Counsel's advice identifies a probable obligation at the reporting date and gives EUR 25,000 as its best estimate. The certified amount uses this direct estimate rather than an unsupported endpoint of the EUR 20,000-EUR 30,000 range.",
       "statementEffect": {
         "profit": -25000,
         "cash": 0,
@@ -2024,7 +2024,7 @@
       "aiProposal": "Agent 1: record EUR 24,000 depreciation.",
       "independentChallenge": "Agent 2: record EUR 24,000 depreciation while seeking confirmation of useful lives and residual values.",
       "certifiedFinalAnswer": "Estimate period depreciation at EUR 24,000.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Estimate period depreciation at EUR 24,000.",
+      "studentReasoning": "The independent depreciation schedule and the opening PPE record support a EUR 24,000 allocation of asset cost to the period. The amount is used with a clear disclosure that useful-life and residual-value support should be obtained.",
       "statementEffect": {
         "profit": -24000,
         "cash": 0,
@@ -2052,7 +2052,7 @@
       "aiProposal": "Agent 1: use EUR 121,000 closing saleable inventory from physical count.",
       "independentChallenge": "Agent 2: use EUR 121,000 closing inventory but note a possible EUR 9,000 downside from the consumption conflict.",
       "certifiedFinalAnswer": "Estimate closing saleable inventory at EUR 121,000: physical inventory EUR 143,000 less the EUR 22,000 write-down. Disclose the EUR 9,000 conflict.",
-      "studentReasoning": "Certified final answer follows the approved analysis: Estimate closing saleable inventory at EUR 121,000: physical inventory EUR 143,000 less the EUR 22,000 write-down. Disclose the EUR 9,000 conflict.",
+      "studentReasoning": "The physical count directly supports EUR 143,000 of stock before impairment, and the warehouse assessment supports a EUR 22,000 write-down. EUR 143,000 minus EUR 22,000 gives EUR 121,000 saleable inventory; the conflicting consumption record remains a disclosed EUR 9,000 uncertainty.",
       "statementEffect": {
         "profit": -22000,
         "cash": 0,
@@ -2437,15 +2437,67 @@
       "unresolvedConsumptionConflict": 9000
     },
     "payrollPPEDebtAndEquity": {
-      "closingPayrollPayable": 32000,
-      "ppeCost": 260000,
-      "accumulatedDepreciation": 69000,
-      "netPPE": 191000,
-      "loanPrincipal": 131000,
-      "interestPayable": 2000,
-      "openingEquity": 170000,
-      "ownerDistributions": 110000,
-      "closingEquity": 134000
+      "payrollPayable": {
+        "openingBalance": 15000,
+        "regularPayrollExpense": 248000,
+        "eventDeliveryPayroll": 80000,
+        "salesPayroll": 72000,
+        "officePayroll": 96000,
+        "cashPaid": -231000,
+        "closingBalance": 32000,
+        "calculation": "EUR 15,000 opening payable + EUR 248,000 employee service expense - EUR 231,000 cash paid = EUR 32,000 closing payable."
+      },
+      "operatingExpenses": {
+        "openingBalance": 0,
+        "rent": 48000,
+        "marketing": 55000,
+        "software": 16000,
+        "utilities": 12000,
+        "repair": 10000,
+        "insurance": 0,
+        "totalExpense": 141000,
+        "closingBalance": 0,
+        "calculation": "EUR 48,000 rent + EUR 55,000 marketing + EUR 16,000 software + EUR 12,000 utilities + EUR 10,000 repair = EUR 141,000. No supportable insurance amount is recognised."
+      },
+      "tradePayables": {
+        "openingBalance": 45000,
+        "purchasesReceived": 459000,
+        "supplierPayments": -378000,
+        "closingBalance": 126000,
+        "calculation": "EUR 45,000 inferred opening payable + EUR 459,000 purchases received - EUR 378,000 supplier payments = EUR 126,000 closing payable."
+      },
+      "ppe": {
+        "openingCost": 180000,
+        "equipmentAdditions": 80000,
+        "closingCost": 260000,
+        "openingAccumulatedDepreciation": 45000,
+        "depreciationCharge": 24000,
+        "closingAccumulatedDepreciation": 69000,
+        "closingNetPPE": 191000,
+        "calculation": "Cost: EUR 180,000 + EUR 80,000 additions = EUR 260,000. Accumulated depreciation: EUR 45,000 + EUR 24,000 = EUR 69,000. Net PPE: EUR 260,000 - EUR 69,000 = EUR 191,000."
+      },
+      "debtAndInterest": {
+        "openingLoanPrincipal": 100000,
+        "loanProceeds": 50000,
+        "principalRepayment": -19000,
+        "closingLoanPrincipal": 131000,
+        "openingInterestPayable": 0,
+        "interestExpense": 12000,
+        "interestPaid": -10000,
+        "closingInterestPayable": 2000,
+        "calculation": "Loan: EUR 100,000 + EUR 50,000 - EUR 19,000 = EUR 131,000. Interest: EUR 0 opening + EUR 12,000 expense - EUR 10,000 paid = EUR 2,000 payable."
+      },
+      "equityAndDistributions": {
+        "openingAssets": 330000,
+        "openingLiabilities": 160000,
+        "openingEquity": 170000,
+        "profitForPeriod": 74000,
+        "villaWithdrawal": -70000,
+        "ownerCardWithdrawal": -40000,
+        "ownerDistributions": -110000,
+        "closingEquity": 134000,
+        "calculation": "Opening equity: EUR 330,000 assets - EUR 160,000 liabilities = EUR 170,000. Closing equity: EUR 170,000 + EUR 74,000 profit - EUR 110,000 owner withdrawals = EUR 134,000."
+      }
     }
   },
   "statements": {
@@ -2513,6 +2565,12 @@
       "topic": "Inventory uncertainty",
       "amount": 9000,
       "treatment": "Use the 31 August physical count for EUR 121,000 saleable inventory. Disclose a possible EUR 9,000 downside to inventory, profit and equity because the material-consumption record conflicts with the count.",
+      "confidence": "medium"
+    },
+    {
+      "topic": "Insurance limitation",
+      "amount": 0,
+      "treatment": "No insurance asset, prepaid balance or expense is recognised because the supplied evidence does not identify a supportable amount. Management claims are not used as a substitute for evidence.",
       "confidence": "medium"
     }
   ],
